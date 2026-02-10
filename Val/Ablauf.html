@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>📋 Ablauf</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="wrap">
+
+    <nav class="tabs">
+      <a class="tab" href="index.html">💘 Date</a>
+      <a class="tab" href="packliste.html">🧳 Packliste</a>
+      <a class="tab" href="fahrplan.html">🗺️ Fahrplan</a>
+      <a class="tab active" href="ablauf.html">📋 Ablauf</a>
+    </nav>
+
+    <h1>Unser Ablauf 🗓️</h1>
+    <p>So sieht unser perfekter Urlaub aus 💞</p>
+
+    <section class="scheduleCard">
+      <ul class="scheduleList"></ul>
+    </section>
+
+    <section class="accordion">
+      <div class="accordion-item">
+        <button class="acc-header" aria-expanded="false" aria-controls="acc-1">
+          <div>
+            Valentinstag - 14.02.2024 ❤️‍🔥
+            <small>Hier kannst du Sachen abhaken.</small>
+          </div>
+          <div class="chev" aria-hidden="true">⌄</div>
+        </button>
+        <div class="acc-content" id="acc-1" aria-hidden="true">
+          <ul>
+            <li><label><input type="checkbox"> Aufgabe 1</label></li>
+            <li><label><input type="checkbox"> Aufgabe 2</label></li>
+            <li><label><input type="checkbox"> Aufgabe 3</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="acc-header" aria-expanded="false" aria-controls="acc-2">
+          <div>
+            Aufgabenliste Tab 2
+            <small>Hier kannst du Sachen abhaken.</small>
+          </div>
+          <div class="chev" aria-hidden="true">⌄</div>
+        </button>
+        <div class="acc-content" id="acc-2" aria-hidden="true">
+          <ul>
+            <li><label><input type="checkbox"> Aufgabe 1</label></li>
+            <li><label><input type="checkbox"> Aufgabe 2</label></li>
+            <li><label><input type="checkbox"> Aufgabe 3</label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./ablauf.js"></script>
+</body>
+</html>
