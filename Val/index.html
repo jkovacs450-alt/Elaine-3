@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💘 Valentinstag</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <nav class="tabs">
+  <a class="tab active" href="index.html">💘 Date</a>
+  <a class="tab" href="packliste.html">🧳 Packliste</a>
+  <a class="tab" href="fahrplan.html">🗺️ Fahrplan</a>
+  <a class="tab" href="ablauf.html">📋 Ablauf</a>
+</nav>
+
+
+    <h1 id="title">Hallo mein Schatz 💖</h1>
+    <p id="question">Willst du meine Valentins-Date sein?</p>
+
+    <section class="countdownCard" aria-label="Countdown">
+      <div class="countdownTitle">Countdown bis zum Date ⏳</div>
+      <div class="countdownGrid" id="countdown">
+        <div class="cdBox"><div class="cdNum" id="d">–</div><div class="cdLbl">Tage</div></div>
+        <div class="cdBox"><div class="cdNum" id="h">–</div><div class="cdLbl">Std</div></div>
+        <div class="cdBox"><div class="cdNum" id="m">–</div><div class="cdLbl">Min</div></div>
+        <div class="cdBox"><div class="cdNum" id="s">–</div><div class="cdLbl">Sek</div></div>
+      </div>
+      <div class="countdownSub" id="countdownSub">📅 14.02 • 10:00</div>
+    </section>
+
+    <section class="stage" id="stage" aria-label="Fragebereich">
+      <button class="btn yes" id="yesBtn">JA 😍</button>
+      <button class="btn no" id="noBtn">Nein 🙄</button>
+
+      <!-- GIF erscheint erst nach "JA" -->
+      <div class="gifOverlay" id="gifOverlay" aria-hidden="true">
+        <img
+          id="yesGif"
+          alt="Herzchen-GIF"
+          src="https://media.giphy.com/media/3o6gbeVN2ZPbG2COKA/giphy.gif"
+        />
+      </div>
+    </section>
+
+    <div class="hint" id="hint">Tipp: Versuch mal „Nein“ zu drücken 😌</div>
+    <div class="toast" id="toast">Yesss!! 💘 Ich freu mich so!!!</div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
